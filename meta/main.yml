@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Ned Zimmerman
+  author: greatislander
   description: Installs PrinceXML.
   company: Pressbooks (Book Oven Inc.)
   license: MIT
@@ -167,4 +167,9 @@ galaxy_info:
   #  versions:
   #  - all
   #  - Any
-  galaxy_tags: [eprdctn, xhtml, pdf]
+  galaxy_tags:
+    - eprdctn
+    - publishing
+    - authoring
+    - xhtml
+    - pdf

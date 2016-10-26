@@ -17,7 +17,7 @@ Available variables are listed below, along with default values (see defaults/ma
 
 The URI of the desired PrinceXML package. Defaults to the latest stable version for Ubuntu 16.04/64-bit.
 
-    prince_license: false
+    prince_license: ''
 
 The local path to your PrinceXML `license.dat` file.
 
