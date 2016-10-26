@@ -19,7 +19,7 @@ The URI of the desired PrinceXML package. Defaults to the latest stable version 
 
     prince_license: ''
 
-The local path to your PrinceXML `license.dat` file.
+The local path to your PrinceXML `license.dat` file (optional).
 
 Dependencies
 ------------
