@@ -1,7 +1,7 @@
 ---
 - name: Install PrinceXML
   apt:
-    deb: {{ prince_package_uri }}
+    deb: "{{ prince_package_uri }}"
 
 - name: Upload PrinceXML license
   copy:
