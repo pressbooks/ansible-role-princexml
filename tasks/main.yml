@@ -6,23 +6,23 @@
 
 - name: Upload PrinceXML license
   copy:
-    src: "{{ prince_license_path }}"
+    src: "{{ prince_license }}"
     dest: /usr/lib/prince/license/license.dat.new
     owner: root
     group: root
     mode: "u=rw,g=r,o=r"
-  when: prince_license_path is defined
+  when: prince_license is defined
 
 - name: Check for existing PrinceXML license
   stat:
     path: /usr/lib/prince/license/license.dat
   register: existing_license
-  when: prince_license_path is defined
+  when: prince_license is defined
 
 - name: Backup old PrinceXML license
   command: mv /usr/lib/prince/license/license.dat /usr/lib/prince/license/license.dat.{{ lookup('pipe', 'date +%Y%m%d') }}.old
-  when: existing_license.stat.exists and prince_license_path is defined
+  when: existing_license.stat.exists and prince_license is defined
 
 - name: Install new PrinceXML license
   command: mv /usr/lib/prince/license/license.dat.new /usr/lib/prince/license/license.dat
-  when: prince_license_path is defined
+  when: prince_license is defined

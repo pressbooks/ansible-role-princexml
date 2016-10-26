@@ -1,2 +1,3 @@
 ---
-prince_package_uri: http://www.princexml.com/download/prince_20161018-1_ubuntu16.04_amd64.deb
+prince_package_uri: https://www.princexml.com/download/prince_10r7-1_ubuntu16.04_amd64.deb
+prince_license: false
