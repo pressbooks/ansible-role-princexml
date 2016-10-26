@@ -1,7 +1,7 @@
 PrinceXML
 =========
 
-[![Build Status](https://travis-ci.org/pressbooks/ansible-role-princexml.svg?branch=master&style=flat-square)](https://travis-ci.org/pressbooks/ansible-role-princexml) [![GitHub release](https://img.shields.io/github/release/pressbooks/ansible-role-princexml.svg?style=flat-square)](https://github.com/pressbooks/ansible-role-princexml/releases/latest)
+[![Build Status](https://img.shields.io/travis/pressbooks/ansible-role-princexml.svg?style=flat-square)](https://travis-ci.org/pressbooks/ansible-role-princexml) [![GitHub release](https://img.shields.io/github/release/pressbooks/ansible-role-princexml.svg?style=flat-square)](https://github.com/pressbooks/ansible-role-princexml/releases/latest)
 
 Installs [PrinceXML](https://princexml.com) on Ubuntu 16.04.
 
