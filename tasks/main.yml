@@ -1,0 +1,30 @@
+---
+- name: Install PrinceXML
+  apt:
+    deb: {{ prince_package_uri }}
+
+- name: Upload PrinceXML license
+  copy:
+    src: "{{ prince_license_path }}"
+    dest: /usr/lib/prince/license/license.dat.new
+    owner: root
+    group: root
+    mode: "u=rw,g=r,o=r"
+  register: result
+  when: prince_license_path is defined
+
+- name: Check for existing PrinceXML license
+  stat:
+    path: /usr/lib/prince/license/license.dat
+    register: license
+  when: result|succeeded
+
+- name: Backup old PrinceXML license
+  command: mv /usr/lib/prince/license/license.dat /usr/lib/prince/license/license.dat.{{ lookup('pipe', 'date +%Y%m%d') }}.old
+  when:
+    - result|succeeded
+    - license.stat.exists
+
+- name: Install new PrinceXML license
+  command: mv /usr/lib/prince/license/license.dat.new /usr/lib/prince/license/license.dat
+  when: result|succeeded
