@@ -1,7 +1,7 @@
 PrinceXML
 =========
 
-Installs [PrinceXML](https://princexml.com) on Ubuntu 16.04/64-bit.
+Installs [PrinceXML](https://princexml.com) on Ubuntu 16.04.
 
 Requirements
 ------------
@@ -41,4 +41,4 @@ MIT
 Author Information
 ------------------
 
-This role was created in 2016 by [Ned Zimmerman](https://github.com/greatislander), lead developer for [Pressbooks](https://pressbooks.org).
+This role was created in 2016 by [Ned Zimmerman](https://github.com/greatislander) for [Pressbooks](https://pressbooks.org).
