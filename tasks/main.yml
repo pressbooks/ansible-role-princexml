@@ -14,14 +14,13 @@
   when: prince_license != ""
 
 - name: Check for existing PrinceXML license
-  stat:
-    path: /usr/lib/prince/license/license.dat
+  stat: path=/usr/lib/prince/license/license.dat
   register: existing_license
   when: prince_license != ""
 
 - name: Backup old PrinceXML license
   command: mv /usr/lib/prince/license/license.dat /usr/lib/prince/license/license.dat.{{ lookup('pipe', 'date +%Y%m%d') }}.old
-  when: existing_license.stat.exists and prince_license != ""
+  when: prince_license != "" and existing_license.stat.exists
 
 - name: Install new PrinceXML license
   command: mv /usr/lib/prince/license/license.dat.new /usr/lib/prince/license/license.dat
