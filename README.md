@@ -15,7 +15,7 @@ Role Variables
 
 Available variables are listed below, along with default values (see defaults/main.yml):
 
-    prince_package_uri: https://www.princexml.com/download/prince_11-1_ubuntu16.04_amd64.deb
+    prince_package_uri: https://www.princexml.com/download/prince_11.3-1_ubuntu16.04_amd64.deb
 
 The URI of the desired PrinceXML package. Defaults to the latest stable version for Ubuntu 16.04/64-bit.
 
