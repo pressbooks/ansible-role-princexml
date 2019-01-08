@@ -3,7 +3,7 @@ galaxy_info:
   description: Installs PrinceXML.
   company: Pressbooks (Book Oven Inc.)
   license: MIT
-  min_ansible_version: 2.0
+  min_ansible_version: 2.5
   platforms:
   #- name: OpenBSD
   #  versions:
@@ -107,6 +107,7 @@ galaxy_info:
   #  - vivid
   #  - wily
     - xenial
+    - bionic
   #- name: Debian
   #  versions:
   #  - all

@@ -1,8 +1,16 @@
 ---
+- name: 'Check for supported environment'
+  fail: msg="PrinceXML can only be installed on Ubuntu Xenial or Bionic."
+  when: (ansible_distribution|string != 'Ubuntu') or
+        (ansible_distribution_release|string != 'xenial' and ansible_distribution_release|string != 'bionic')
+
+- name: Determine PrinceXML version
+  set_fact:
+    prince_package_uri: "prince_package_uri_ubuntu_{{ ansible_distribution_release|string }}"
+
 - name: Install PrinceXML
   apt:
-    deb: "{{ prince_package_uri }}"
-    state: present
+    deb: "{{ lookup('vars', prince_package_uri) }}"
 
 - name: Upload PrinceXML license
   copy:
