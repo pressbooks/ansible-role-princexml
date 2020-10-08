@@ -1,4 +1,5 @@
 ---
-prince_package_uri_ubuntu_xenial: https://www.princexml.com/download/prince_12.5-1_ubuntu16.04_amd64.deb
-prince_package_uri_ubuntu_bionic: https://www.princexml.com/download/prince_12.5-1_ubuntu18.04_amd64.deb
+prince_package_uri_ubuntu_xenial: https://www.princexml.com/download/prince_13.5-1_ubuntu16.04_amd64.deb
+prince_package_uri_ubuntu_bionic: https://www.princexml.com/download/prince_13.5-1_ubuntu18.04_amd64.deb
+prince_package_uri_ubuntu_focal: https://www.princexml.com/download/prince_13.5-1_ubuntu20.04_amd64.deb
 prince_license: ""

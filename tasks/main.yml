@@ -2,7 +2,7 @@
 - name: 'Check for supported environment'
   fail: msg="PrinceXML can only be installed on Ubuntu Xenial or Bionic."
   when: (ansible_distribution|string != 'Ubuntu') or
-        (ansible_distribution_release|string != 'xenial' and ansible_distribution_release|string != 'bionic')
+        (ansible_distribution_release|string != 'xenial' and ansible_distribution_release|string != 'bionic' and ansible_distribution_release|string != 'focal')
 
 - name: Determine PrinceXML version
   set_fact:
