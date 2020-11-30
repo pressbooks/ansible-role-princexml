@@ -1,3 +1,5 @@
+*NOTE: This role is no longer being used by Pressbooks and has been deprecated. We have archived this repo, as it is no longer being maintained.*
+
 PrinceXML
 =========
 
